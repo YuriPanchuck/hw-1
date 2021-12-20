@@ -148,11 +148,21 @@ body {
 
   color: var(--second-title-color);
 }
+/*---------------------WORK-------------------- */
+.work-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--third-title-color);
+}
 /*---------------------TEAM-------------------- */
 .team-title {
   font-weight: bold;
   font-size: 36px;
-  line-height: 1.16;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 
@@ -209,7 +219,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--first-title-color);
+  color: rgba(255, 255, 255, 0.6);
 }
 /*
 .footer-mail {
@@ -225,12 +235,13 @@ body {
   color: var(--first-title-color);
 }
 
-.footer-link:hover,
-.footer-link:focus {
+.footer-light:hover,
+.footer-light:focus {
   color: var(--accent-color);
 }
 /*---------------------PORTFOLIO-------------------- */
 .all-btn {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -243,6 +254,7 @@ body {
 .app-btn,
 .design-btn,
 .marketing-btn {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
@@ -250,14 +262,16 @@ body {
   letter-spacing: 0.03em;
   color: var(--third-title-color);
 }
-
+/*---------------------PROJECT-------------------- */
 .project-name {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--third-title-color);
 }
-.project.program {
+.project-program {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
