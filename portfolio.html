@@ -10,27 +10,36 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <link rel="stylesheet" href="./css/styles.css">
 
 </head>
 
 <body>
     <header class="header">
+        <div class="container header-container">
         <a class="text header-logo link" href="">Web<span class="header-logo-first">Studio</span></a>
         <nav class="header-nav">
-            <ul class="header-link list">
-                <li class="text header-link"><a class="text link header-link" href="index.html">Студия</a></li>
-                <li class="text header-link"><a class="text link header-first-link" href="portfolio.html">Портфолио</a></li>
-                <li class="text header-link"><a class="text link header-link" href="#contacts">Контакты</a></li>
+            <ul class="header-list list">
+                <li class="header-item text header-link"><a class="text link header-link" href="index.html">Студия</a></li>
+                <li class="header-item text header-link"><a class="text link header-first-link" href="portfolio.html">Портфолио</a></li>
+                <li class="header-item text header-link"><a class="text link header-link" href="#contacts">Контакты</a></li>
             </ul>
         </nav>
-            <ul class="list">
-                <li class="header-link"><a class="text link header-tel" href="mailto:info@example.com">info@example.com</a></li>
-                <li class="header-link"><a class="text link header-tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
+            <div class="header-connect">
+            <ul class="header-list list">
+                <li class="header-item header-link"><a class="text link header-tel" href="mailto:info@example.com">info@example.com</a></li>
+                <li class="header-item header-link"><a class="text link header-tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>
+            </div>
+        </div>
     </header>
     <main>
         <section class="portfolio-button">
+            <h1 class="visually-hidden">Меню портфолио</h1>
+            <div class="container">
             <ul class="button-list"> 
                 <li><button type="button" class="pointer all-btn">Все</button></li>
                 <li><button type="button" class="pointer web-btn btn-link">Веб-сайты</button></li>
@@ -86,24 +95,27 @@
                     <p class="project-program align-left">Приложение</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <footer class="footer" id="contacts">
-        <a class="link footer-link text" href="">Web<span class="footer-logo-second">Studio</span></a>
-        <address>
-            <ul class="list footer-list">
-                <li class="footer-item">
-                    <a class="text link footer-map footer-light" href="https://goo.gl/maps/rudogCTzhb6VEt387" target="_blank"
-                        rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
-                </li>
-                <li class="footer-item">
-                    <a class="text link footer-tel footer-light" href="tel:+380991111111">+38 099 111 11 11</a>
-                </li>
-                <li class="footer-item">
-                    <a class="text link footer-mail footer-light" href="mailto:info@example.com">info@example.com</a>
-                </li>
-            </ul>
-        </address>
+        <div class="container">
+            <a class="text link footer-link" href="">Web<span class="footer-logo-second">Studio</span></a>
+            <address>
+                <ul class="list footer-list">
+                    <li class="footer-item">
+                        <a class="text link footer-map footer-light" href="https://goo.gl/maps/rudogCTzhb6VEt387"
+                            target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси Украинки, 26</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="text link footer-tel footer-light" href="tel:+380991111111">+38 099 111 11 11</a>
+                    </li>
+                    <li class="footer-item">
+                        <a class="text link footer-mail footer-light" href="mailto:info@example.com">info@example.com</a>
+                    </li>
+                </ul>
+            </address>
+        </div>
     </footer>
 </body>
 

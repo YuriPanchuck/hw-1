@@ -9,31 +9,41 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
     
 </head>
 <body>
     <header class= "header" id="studio">
-    <a class="text header-logo link" href="">Web<span class="header-logo-first">Studio</span></a>
+        <div class="container header-container">
+        <a class="text header-logo link" href="">Web<span class="header-logo-first">Studio</span></a>
         <nav class="header-nav">
-            <ul class="header-link list"> 
-                <li class="header-link"><a class="text link header-first-link" href="index.html">Студия</a></li>
-                <li class="header-link"><a class="text link header-link" href="portfolio.html">Портфолио</a></li>
-                <li class="header-link"><a class="text link header-link" href="#contacts">Контакты</a></li>
+            <ul class="header-list list"> 
+                <li class="header-item header-link"><a class="text link header-first-link" href="index.html">Студия</a></li>
+                <li class="header-item header-link"><a class="text link header-link" href="portfolio.html">Портфолио</a></li>
+                <li class="header-item header-link"><a class="text link header-link" href="#contacts">Контакты</a></li>
             </ul>
         </nav>
-            <ul class="list">
-                <li class="header-link"><a class="text link header-mail" href="mailto:info@example.com">info@example.com</a></li>
-                <li class="header-link"><a class="text link header-tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
+            <div class="header-connect">
+            <ul class="header-list list">
+                <li class="header-item header-link"><a class="text link header-mail" href="mailto:info@example.com">info@example.com</a></li>
+                <li class="header-item header-link"><a class="text link header-tel" href="tel:+380991111111">+38 099 111 11 11</a></li>
             </ul>
+            </div>
+        </div>
     </header>
     <main>
         <section class="hero">
-            <h1 class="hero-title post-title" >Эффективные решения для вашего бизнеса</h1>
+            <div class="container">
+            <h1 class="hero-title post-title">Эффективные решения для вашего бизнеса</h1>
             <button type="button" class="pointer hero-btn post-title" >Заказать услугу</button>
+        </div>
         </section>
-        <section>
-            <ul class="list hero-list">
+        <section class="hero-list">
+            <div class="container">
+            <ul class="list hero-item-list">
                 <li class="hero-item">
                     <h3 class="hero-pre-title align-left">Внимание к деталям</h3>
                     <p class="hero-after-title align-left">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -51,8 +61,10 @@
                     <p class="hero-after-title align-left">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
         </section>
         <section class="work" id="work">
+            <div class="container">
             <h2 class="post-title work-title">Чем мы занимаемся</h2>
             <ul class="list work-list">
                 <li class="work-item">
@@ -65,8 +77,10 @@
                     <img class="work-image" src="./images/box3.jpg" alt="графика" width="370" height="294" />
                 </li>
             </ul>
+            </div>
         </section>
         <section class="team" id="team">
+            <div class="container">
             <h2 class="team-title">Наша команда</h2>
             <ul class="list team-list">
                 <li class="team-item">
@@ -90,9 +104,11 @@
                     <p class="team-profession" lang="en">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <footer class="footer" id="contacts">
+        <div class="container">
         <a class="text link footer-link" href="">Web<span class="footer-logo-second">Studio</span></a>
         <address>
             <ul class="list footer-list">
@@ -107,6 +123,7 @@
                 </li>
             </ul>
         </address>
+        </div>
     </footer>
 </body>
 </html>
