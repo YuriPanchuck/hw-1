@@ -76,7 +76,7 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
-  border-bottom: 5px solid #2196f3;
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
@@ -91,6 +91,9 @@ img {
 
   margin-right: 93px;
 }
+.header-item:not(:last-child) {
+  margin-right: 50px;
+}
 .header-list {
   display: flex;
 }
@@ -103,9 +106,7 @@ img {
   line-height: 1.14;
   color: var(--third-title-color);
 }
-.header-item :not(last-child) {
-  margin-right: 50px;
-}
+
 .header-first-link {
   font-weight: 500;
   font-size: 14px;
@@ -196,28 +197,24 @@ img {
 
   color: var(title);
 }
-
+.hero-pre-title {
+  margin-bottom: 10px;
+}
 .hero-after-title {
   font-size: 14px;
   line-height: 1.71;
-  /* or 171% */
-
   letter-spacing: 0.03em;
-
   color: var(--second-title-color);
 }
 .hero-item-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
 }
 .hero-item {
   width: calc(100% / 4 - 30px);
-  margin-left: 30px;
-  margin-bottom: 30px;
+  height: 101px;
 }
-.hero-item :not(last-child) {
+.hero-item:not(:last-child) {
   margin-right: 30px;
 }
 /*---------------------WORK-------------------- */
@@ -261,16 +258,14 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--third-title-color);
+  padding-bottom: 50px;
 }
 .team-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
-
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--third-title-color);
 }
 .team-profession {
@@ -289,17 +284,21 @@ img {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-bottom: -30px;
 }
 .team-item {
   width: calc(100% / 4 - 30px);
+}
+.team-item:not(:first-child) {
   margin-left: 30px;
-  margin-bottom: 30px;
 }
-.team-item :not(last-child) {
-  margin-right: 30px;
+.team-name {
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
+.team-profession {
+  padding-bottom: 30px;
+}
+
 /*---------------------FOOTER-------------------- */
 .footer {
   padding-top: 60px;
@@ -350,6 +349,12 @@ img {
 .footer-light:focus {
   color: var(--accent-color);
 }
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 /*---------------------PORTFOLIO-------------------- */
 .all-btn {
   font-family: "Roboto", sans-serif;
@@ -384,9 +389,10 @@ img {
   margin-bottom: 50px;
   justify-content: center;
 }
-.button-list :not(last-child) {
+.portfolio-button-list:not(:last-child) {
   margin-right: 8px;
 }
+
 /*---------------------PROJECT-------------------- */
 .project-name {
   font-family: "Roboto", sans-serif;
@@ -409,15 +415,16 @@ img {
 .project-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
 }
 .project-item {
   width: calc(100 / 3 -30px);
-  margin-left: 30px;
   max-width: 100%;
   margin-bottom: 30px;
 }
-
+.project-item:not(:nth-last-child(3n)) {
+  margin-left: 30px;
+}
+/*
 .project-program {
   border-left: 5px solid #eeeeee;
   border-right: 5px solid #eeeeee;
@@ -428,4 +435,7 @@ img {
   border-left: 5px solid #eeeeee;
   border-right: 5px solid #eeeeee;
   padding-left: 24px;
+} */
+.project-border {
+  border: 1px solid #eeeeee;
 }
